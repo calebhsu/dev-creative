@@ -53,3 +53,23 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* Global Styles */
+h1 {
+  text-align: center;
+}
+
+footer {
+  padding: 1em 4em;
+  text-align: right;
+}
+
+/* Special Styles */
+.container {
+  padding: 10px;
+  text-align: center;
+}
+
+.verse {
+  padding: 1.5em 1em;
+}
