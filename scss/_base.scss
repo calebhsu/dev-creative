@@ -15,7 +15,7 @@ footer {
   text-align: right;
 }
 
-/* Special Styles */
+/* Flexbox Styles */
 .flex-container {
   display: inline-block;
   padding: 1em;
@@ -25,7 +25,6 @@ footer {
   @include display-flex(flex);
   @include flex-flow(row nowrap);
   @include justify-content(space-between);
-
 }
 
 .flex-container section {
@@ -33,4 +32,23 @@ footer {
   padding: 0.8em;
 
   @include flex(1);
+}
+
+@media only screen and (max-width: 480px) {
+  .flex-container {
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+}
+    
+/* Special Styles */
+.box {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2em 1em;
+  width: 100%;
+}
+
+.stanza {
+  line-height: 1.4em;
 }
