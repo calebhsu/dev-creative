@@ -1,5 +1,6 @@
 /* Global Styles */
 h1 {
+  padding: 1em;
   text-align: center;
 }
 
@@ -9,11 +10,21 @@ footer {
 }
 
 /* Special Styles */
-.container {
-  padding: 10px;
+.flex-container {
+  display: inline-block;
+  padding: 1em;
   text-align: center;
+  width: 90%;
+
+  @include display-flex(flex);
+  @include flex-flow(row nowrap);
+  @include justify-content(space-between);
+
 }
 
-.verse {
-  padding: 1.5em 1em;
+.flex-container section {
+  margin: 0 3%;
+  padding: 0.8em;
+
+  @include flex(1);
 }

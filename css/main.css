@@ -56,6 +56,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Global Styles */
 h1 {
+  padding: 1em;
   text-align: center;
 }
 
@@ -65,11 +66,22 @@ footer {
 }
 
 /* Special Styles */
-.container {
-  padding: 10px;
+.flex-container {
+  display: inline-block;
+  padding: 1em;
   text-align: center;
+  width: 90%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 
-.verse {
-  padding: 1.5em 1em;
+.flex-container section {
+  margin: 0 3%;
+  padding: 0.8em;
+  -webkit-flex: 1;
+  flex: 1;
 }
