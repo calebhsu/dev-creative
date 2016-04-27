@@ -36,12 +36,10 @@ footer {
 
 @media only screen and (max-width: 480px) {
   .flex-container {
-    -webkit-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column;
+    @include flex-flow(column);
   }
 }
-    
+
 /* Special Styles */
 .box {
   background-color: rgba(255, 255, 255, 0.5);
@@ -50,5 +48,6 @@ footer {
 }
 
 .stanza {
+  display: none;
   line-height: 1.4em;
 }
