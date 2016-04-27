@@ -1,4 +1,10 @@
 /* Global Styles */
+body {
+  @include background('../img/landscape.jpg');
+  @include background-size(cover);
+  overflow-x: hidden;
+}
+
 h1 {
   padding: 1em;
   text-align: center;

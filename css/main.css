@@ -55,6 +55,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Global Styles */
+body {
+  background-image: url("../img/landscape.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
 h1 {
   padding: 1em;
   text-align: center;
