@@ -57,7 +57,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: Aniron;
-  src: url("../anirm___.ttf"), url("anirm___.eot");
+  src: url("../fonts/anirm___.ttf"), url("anirm___.eot");
 }
 /* Global Styles */
 body {
