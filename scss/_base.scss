@@ -85,6 +85,7 @@ main {
     p {
       font-family: $font-click;
       text-transform: lowercase;
+      @include animation(blink 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate);
     }
     #sig {
       margin-top: -1em;
@@ -103,5 +104,6 @@ main {
 
 /* Animations Woot */
 @include keyframes(blink) {
-  
+  from { opacity: 1; }
+  to { opacity: 0; }
 }

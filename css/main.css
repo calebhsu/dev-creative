@@ -156,6 +156,10 @@ main {
 #splash #splash-content p {
   font-family: "Josefin Sans", "Lato", sans-serif;
   text-transform: lowercase;
+  -webkit-animation: blink 1.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+  -moz-animation: blink 1.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+  -o-animation: blink 1.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+  animation: blink 1.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
 }
 #splash #splash-content #sig {
   margin-top: -1em;
@@ -172,6 +176,35 @@ main {
 }
 
 /* Animations Woot */
-@-webkit-keyframes blink {}
-@-moz-keyframes blink {}
-@-o-keyframes blink {}
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
