@@ -74,11 +74,8 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
   overflow-x: hidden;
+  overflow-y: scroll;
   z-index: -1;
-}
-
-h2 {
-  line-height: 1.4em;
 }
 
 footer {
@@ -159,17 +156,17 @@ main {
   position: relative;
   top: 50%;
   text-align: center;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
   width: 50%;
 }
 #splash #splash-content h1 {
   color: rgba(0, 0, 0, 0.85);
-  font-family: "Aniron", "Quintessential", Garamond, serif;
+  font-family: "Aniron", "Quintessential", "La Belle Aurore", Garamond, serif;
   font-size: 1.2em;
   text-transform: uppercase;
 }
 #splash #splash-content h2 {
-  font-family: "Aniron", "Quintessential", Garamond, serif;
+  font-family: "Aniron", "Quintessential", "La Belle Aurore", Garamond, serif;
 }
 #splash #splash-content p {
   font-family: "Josefin Sans", "Lato", Helvetica, sans-serif;
@@ -180,9 +177,10 @@ main {
   animation: blink 1.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
 }
 #splash #splash-content #sig {
-  margin-top: -1em;
-  margin-left: 16em;
+  margin: auto;
+  margin-top: -0.8em;
   margin-bottom: 2em;
+  max-width: 100%;
   opacity: 0.1;
   width: 13em;
 }
