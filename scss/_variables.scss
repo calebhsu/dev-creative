@@ -1,6 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Quintessential|Josefin+Sans|Lato);
 
-$font-title: 'Quintessential', serif;
+@font-face {
+  font-family: Aniron;
+  src: url('../anirm___.ttf'),
+  url('anirm___.eot');
+}
+
+$font-title: 'Aniron', 'Quintessential', serif;
 $font-click: 'Josefin Sans', 'Lato', sans-serif;
 
 $color-border: rgba(0, 0, 0, 0.4);

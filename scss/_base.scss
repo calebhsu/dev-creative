@@ -17,6 +17,9 @@ footer {
 
 main {
   display: none;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-60%);
 }
 
 /* Flexbox Styles */
@@ -76,7 +79,7 @@ main {
     h1 {
       color: rgba(0, 0, 0, 0.85);
       font-family: $font-title;
-      font-size: 1.8em;
+      font-size: 1.2em;
       text-transform: uppercase;
     }
     h2 {

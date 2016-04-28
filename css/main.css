@@ -55,6 +55,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+@font-face {
+  font-family: Aniron;
+  src: url("../anirm___.ttf"), url("anirm___.eot");
+}
 /* Global Styles */
 body {
   background-image: url("../img/landscape.jpg");
@@ -80,6 +84,9 @@ footer {
 
 main {
   display: none;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-60%);
 }
 
 /* Flexbox Styles */
@@ -146,12 +153,12 @@ main {
 }
 #splash #splash-content h1 {
   color: rgba(0, 0, 0, 0.85);
-  font-family: "Quintessential", serif;
-  font-size: 1.8em;
+  font-family: "Aniron", "Quintessential", serif;
+  font-size: 1.2em;
   text-transform: uppercase;
 }
 #splash #splash-content h2 {
-  font-family: "Quintessential", serif;
+  font-family: "Aniron", "Quintessential", serif;
 }
 #splash #splash-content p {
   font-family: "Josefin Sans", "Lato", sans-serif;
