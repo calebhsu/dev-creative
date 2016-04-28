@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#splash").click(function(){
-      $(".fadeImg").fadeOut(3000, function() {
+      $("#splash").fadeOut(2000, function() {
         $("main").show(); 
       });
     });

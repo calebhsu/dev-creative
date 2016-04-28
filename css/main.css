@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Quintessential|Josefin+Sans|Lato);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,9 +56,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Global Styles */
-h1 {
-  padding: 1em;
-  text-align: center;
+body {
+  background-image: url("../img/landscape.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+  z-index: -1;
 }
 
 h2 {
@@ -122,13 +131,47 @@ main {
   top: 0%;
   width: 100%;
   z-index: 10;
+  /* #splash-content */
 }
 #splash #splash-content {
+  background: rgba(255, 255, 255, 0.1);
+  border: 5px double rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  padding: 5em 0em;
+  position: relative;
+  top: 50%;
   text-align: center;
+  transform: translateY(-60%);
+  width: 50%;
+}
+#splash #splash-content h1 {
+  color: rgba(0, 0, 0, 0.85);
+  font-family: "Quintessential", serif;
+  font-size: 1.8em;
   text-transform: uppercase;
 }
+#splash #splash-content h2 {
+  font-family: "Quintessential", serif;
+}
+#splash #splash-content p {
+  font-family: "Josefin Sans", "Lato", sans-serif;
+  text-transform: lowercase;
+}
+#splash #splash-content #sig {
+  margin-top: -1em;
+  margin-left: 16em;
+  margin-bottom: 2em;
+  opacity: 0.1;
+  width: 13em;
+}
 
+/* #splash */
 .stanza {
   display: none;
   line-height: 1.4em;
 }
+
+/* Animations Woot */
+@-webkit-keyframes blink {}
+@-moz-keyframes blink {}
+@-o-keyframes blink {}
