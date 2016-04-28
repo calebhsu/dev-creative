@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Quintessential|Josefin+Sans|Lato);
+@import url(https://fonts.googleapis.com/css?family=Quintessential|Josefin+Sans|Lato|Marck+Script|La+Belle+Aurore|Cedarville+Cursive);
 
 @font-face {
   font-family: Aniron;
@@ -6,7 +6,8 @@
   url('anirm___.eot');
 }
 
-$font-title: 'Aniron', 'Quintessential', serif;
-$font-click: 'Josefin Sans', 'Lato', sans-serif;
+$font-title: 'Aniron', 'Quintessential', Garamond, serif;
+$font-click: 'Josefin Sans', 'Lato', Helvetica, sans-serif;
+$font-poem:  'La Belle Aurore', 'Cedarville Cursive', 'Marck Script', Garamond, serif;
 
 $color-border: rgba(0, 0, 0, 0.4);

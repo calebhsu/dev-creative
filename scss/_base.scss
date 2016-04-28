@@ -1,4 +1,8 @@
 /* Global Styles */
+html, body {
+  height: 100%;
+}
+
 body {
   @include background('../img/landscape.jpg');
   @include background-size(cover);
@@ -17,26 +21,28 @@ footer {
 
 main {
   display: none;
-  position: fixed;
+  margin: 0 auto;
+  position: relative;
   top: 50%;
   transform: translateY(-60%);
 }
 
 /* Flexbox Styles */
 .flex-container {
-  display: inline-block;
-  padding: 1em;
   text-align: center;
   width: 90%;
 
   @include display-flex(flex);
   @include flex-flow(row nowrap);
   @include justify-content(space-between);
+  @include align-items(center);
 }
 
 .flex-container section {
+  font-family: $font-poem;
   margin: 0 3%;
-  padding: 0.8em;
+  padding: 0.5em;
+  line-height: 1.4em;
 
   @include flex(1);
 }
@@ -52,6 +58,7 @@ main {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 2em 1em;
   width: 100%;
+  @include transition(0.7s ease-in-out);
 }
 
 #splash { 
@@ -102,7 +109,6 @@ main {
 
 .stanza {
   display: none;
-  line-height: 1.4em;
 }
 
 /* Animations Woot */

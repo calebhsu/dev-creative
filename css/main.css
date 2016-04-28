@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Quintessential|Josefin+Sans|Lato);
+@import url(https://fonts.googleapis.com/css?family=Quintessential|Josefin+Sans|Lato|Marck+Script|La+Belle+Aurore|Cedarville+Cursive);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -60,6 +60,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../fonts/anirm___.ttf"), url("anirm___.eot");
 }
 /* Global Styles */
+html, body {
+  height: 100%;
+}
+
 body {
   background-image: url("../img/landscape.jpg");
   background-repeat: no-repeat;
@@ -84,15 +88,14 @@ footer {
 
 main {
   display: none;
-  position: fixed;
+  margin: 0 auto;
+  position: relative;
   top: 50%;
   transform: translateY(-60%);
 }
 
 /* Flexbox Styles */
 .flex-container {
-  display: inline-block;
-  padding: 1em;
   text-align: center;
   width: 90%;
   display: -webkit-flex;
@@ -101,11 +104,15 @@ main {
   flex-flow: row nowrap;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .flex-container section {
+  font-family: "La Belle Aurore", "Cedarville Cursive", "Marck Script", Garamond, serif;
   margin: 0 3%;
-  padding: 0.8em;
+  padding: 0.5em;
+  line-height: 1.4em;
   -webkit-flex: 1;
   flex: 1;
 }
@@ -121,6 +128,10 @@ main {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 2em 1em;
   width: 100%;
+  -moz-transition: ease-in-out 0.7s;
+  -o-transition: ease-in-out 0.7s;
+  -webkit-transition: ease-in-out 0.7s;
+  transition: ease-in-out 0.7s;
 }
 
 #splash {
@@ -153,15 +164,15 @@ main {
 }
 #splash #splash-content h1 {
   color: rgba(0, 0, 0, 0.85);
-  font-family: "Aniron", "Quintessential", serif;
+  font-family: "Aniron", "Quintessential", Garamond, serif;
   font-size: 1.2em;
   text-transform: uppercase;
 }
 #splash #splash-content h2 {
-  font-family: "Aniron", "Quintessential", serif;
+  font-family: "Aniron", "Quintessential", Garamond, serif;
 }
 #splash #splash-content p {
-  font-family: "Josefin Sans", "Lato", sans-serif;
+  font-family: "Josefin Sans", "Lato", Helvetica, sans-serif;
   text-transform: lowercase;
   -webkit-animation: blink 1.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
   -moz-animation: blink 1.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
@@ -179,7 +190,6 @@ main {
 /* #splash */
 .stanza {
   display: none;
-  line-height: 1.4em;
 }
 
 /* Animations Woot */
