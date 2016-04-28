@@ -55,26 +55,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Global Styles */
-body {
-  background-image: url("../img/landscape.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  overflow-x: hidden;
-}
-
 h1 {
   padding: 1em;
   text-align: center;
 }
 
+h2 {
+  line-height: 1.4em;
+}
+
 footer {
   padding: 1em 4em;
   text-align: right;
+}
+
+main {
+  display: none;
 }
 
 /* Flexbox Styles */
@@ -109,6 +105,27 @@ footer {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 2em 1em;
   width: 100%;
+}
+
+#splash {
+  background-image: url("../img/fog.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  left: 0%;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 10;
+}
+#splash #splash-content {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .stanza {

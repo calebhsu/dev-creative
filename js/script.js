@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    $("#splash").click(function(){
+      $(".fadeImg").fadeOut(3000, function() {
+        $("main").show(); 
+      });
+    });
+
+  /* Dropdown Toggles */
   $("#first").click(function(){
       $(".stanza1").slideToggle("slow");
   });
