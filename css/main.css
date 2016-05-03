@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Quintessential|Josefin+Sans|Lato|Marck+Script|La+Belle+Aurore|Cedarville+Cursive);
+@import url(https://fonts.googleapis.com/css?family=Quintessential|Century|Josefin+Sans|Lato|Marck+Script|La+Belle+Aurore|Cedarville+Cursive);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,7 +74,6 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
   overflow-x: hidden;
-  overflow-y: scroll;
   z-index: -1;
 }
 
@@ -93,8 +92,11 @@ main {
 
 /* Flexbox Styles */
 .flex-container {
+  cursor: pointer;
   text-align: center;
+  margin: 4em auto;
   width: 90%;
+  height: 100vh;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row nowrap;
@@ -107,22 +109,38 @@ main {
 
 .flex-container section {
   font-family: "La Belle Aurore", "Cedarville Cursive", "Marck Script", Garamond, serif;
-  margin: 0 3%;
-  padding: 0.5em;
+  font-size: 1.35em;
   line-height: 1.4em;
+  padding: 0 0.5em;
+  margin: 0 3%;
   -webkit-flex: 1;
   flex: 1;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
+}
+.flex-container section h2 {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Century", Garamond, serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .flex-container {
     -webkit-flex-flow: column;
     flex-flow: column;
   }
 }
+@media only screen and (max-width: 960px) {
+  .flex-container {
+    -webkit-flex-flow: wrap;
+    flex-flow: wrap;
+  }
+}
 /* Special Styles */
 .box {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 2em 1em;
   width: 100%;
   -moz-transition: ease-in-out 0.7s;
@@ -140,6 +158,7 @@ main {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
+  cursor: pointer;
   height: 100%;
   left: 0%;
   position: fixed;
@@ -149,7 +168,7 @@ main {
   /* #splash-content */
 }
 #splash #splash-content {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.5);
   border: 5px double rgba(0, 0, 0, 0.4);
   margin: 0 auto;
   padding: 5em 0em;
@@ -162,7 +181,7 @@ main {
 #splash #splash-content h1 {
   color: rgba(0, 0, 0, 0.85);
   font-family: "Aniron", "Quintessential", "La Belle Aurore", Garamond, serif;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-transform: uppercase;
 }
 #splash #splash-content h2 {
@@ -170,6 +189,7 @@ main {
 }
 #splash #splash-content p {
   font-family: "Josefin Sans", "Lato", Helvetica, sans-serif;
+  font-size: 1.4em;
   text-transform: lowercase;
   -webkit-animation: blink 1.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
   -moz-animation: blink 1.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
@@ -179,9 +199,9 @@ main {
 #splash #splash-content #sig {
   margin: auto;
   margin-top: -0.8em;
-  margin-bottom: 2em;
+  margin-bottom: 1.8em;
   max-width: 100%;
-  opacity: 0.1;
+  opacity: 0.2;
   width: 13em;
 }
 

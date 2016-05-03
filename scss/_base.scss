@@ -7,7 +7,6 @@ body {
   @include background('../img/landscape.jpg');
   @include background-size(cover);
   overflow-x: hidden;
-  overflow-y: scroll;
   z-index: -1;
 }
 
@@ -26,8 +25,11 @@ main {
 
 /* Flexbox Styles */
 .flex-container {
+  cursor: pointer;
   text-align: center;
+  margin: 4em auto;
   width: 90%;
+  height: 100vh;
 
   @include display-flex(flex);
   @include flex-flow(row nowrap);
@@ -37,22 +39,38 @@ main {
 
 .flex-container section {
   font-family: $font-poem;
-  margin: 0 3%;
-  padding: 0.5em;
+  font-size: 1.35em;
   line-height: 1.4em;
+  padding: 0 0.5em;
+  margin: 0 3%;
 
   @include flex(1);
+  @include flex-grow(2);
+
+  h2 {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: $font-numeral;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+  }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .flex-container {
     @include flex-flow(column);
   }
 }
 
+@media only screen and (max-width: 960px) {
+  .flex-container {
+    @include flex-flow(wrap);
+  }
+}
+
 /* Special Styles */
 .box {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 2em 1em;
   width: 100%;
   @include transition(0.7s ease-in-out);
@@ -62,6 +80,7 @@ main {
   @include background('../img/fog.jpg');
   @include background-size(cover);
   
+  cursor: pointer;
   height: 100%;
   left: 0%;
   position: fixed;
@@ -70,7 +89,7 @@ main {
   z-index: 10;
 
   #splash-content {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     border: 5px double $color-border;
     margin: 0 auto;
     padding: 5em 0em;
@@ -83,7 +102,7 @@ main {
     h1 {
       color: rgba(0, 0, 0, 0.85);
       font-family: $font-title;
-      font-size: 1.2em;
+      font-size: 1.4em;
       text-transform: uppercase;
     }
     h2 {
@@ -91,15 +110,16 @@ main {
     }
     p {
       font-family: $font-click;
+      font-size: 1.4em;
       text-transform: lowercase;
       @include animation(blink 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate);
     }
     #sig {
       margin: auto;
       margin-top: -0.8em;
-      margin-bottom: 2em;     
+      margin-bottom: 1.8em;     
       max-width: 100%;
-      opacity: 0.1;
+      opacity: 0.2;
       width: 13em;
     }
   } /* #splash-content */
